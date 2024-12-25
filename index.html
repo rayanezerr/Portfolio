@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rayane Lebsir - Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">RRZ</div>
+      <ul class="language-switch">
+        <li><button onclick="switchLanguage('fr')">Français</button></li>
+        <li><button onclick="switchLanguage('en')">English</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="contact-info">
+    <div class="container">
+      <h2>Rayane Lebsir</h2>
+      <p>Email : <a href="mailto:rayane.lebsir@polymtl.ca">rayane.lebsir@polymtl.ca</a></p>
+      <p class="fr hidden">Téléphone : <a href="tel:+15147756884">+1 514-775-6884</a></p>
+      <p class="en">Phone : <a href="tel:+15147756884">+1 514-775-6884</a></p>
+      <p>GitHub : <a href="https://www.github.com/rayanezerr">rayanezerr</a></p>
+      <p>LinkedIn : <a href="https://www.linkedin.com/in/rayane-lebsir-62503732a/">Rayane Lebsir</a></p>
+    </div>
+  </section>
+
+  <main>
+    <section id="introduction" class="fr hidden">
+      <h1>À propos de moi</h1>
+      <p>Étudiant en 2ème année de génie logiciel à Polytechnique Montréal.</p>
+    </section>
+    <section id="introduction" class="en ">
+      <h1>About me</h1>
+      <p>Second-year software engineering student at Polytechnique Montréal.</p>
+    </section>
+
+    <section id="games">
+      <h2 class="fr hidden">Projets</h2>
+      <h2 class="en">Projects</h2>
+      <ul class="project-list">
+        <li>
+          <div class="project-info">
+            <h3>Chess</h3>
+            <p class="fr hidden">Un jeu d'échec en C++.</p>
+            <p class="en">Chess game built with C++</p>
+          </div>
+          <div class="project-actions">
+            <a href="" class="btn fr hidden">Télécharger</a>
+            <a href="" class="btn en">Download</a>
+            <a href="https://www.github.com/rayanezerr/chess" target="_blank" class="btn github">GitHub</a>
+          </div>
+        </li>
+        <li>
+          <div class="project-info">
+            <h3>Snake</h3>
+            <p class="fr hidden">Un jeu classique de Snake en Python.</p>
+            <p class="en">A classic Snake game built with Python</p>
+          </div>
+          <div class="project-actions">
+            <a href="" class="btn fr hidden">Télécharger</a>
+            <a href="" class="btn en">Download</a>
+            <a href="https://www.github.com/rayanezerr/snake" target="_blank" class="btn github">GitHub</a>
+          </div>
+        </li>
+        <li>
+          <div class="project-info">
+            <h3>Flappy Bird</h3>
+            <p class="fr hidden">Clone de Flappy Bird en Java.</p>
+            <p class="en">Flappy Bird clone built with Java.</p>
+          </div>
+          <div class="project-actions">
+            <a href="" class="btn fr hidden">Télécharger</a>
+            <a href="" class="btn en">Download</a>
+            <a href="https://www.github.com/rayanezerr/flappybirdclone" target="_blank" class="btn github">GitHub</a>
+          </div>
+        </li>
+        <li>
+          <div class="project-info">
+            <h3>Blackjack</h3>
+            <p class="fr hidden">Un jeu de Blackjack simple en C#.</p>
+            <p class="en">Simple Blackjack game built with C#.</p>
+          </div>
+          <div class="project-actions">
+            <a href="https://file.io/3jEjWYdvHw7D" class="btn fr hidden">Télécharger</a>
+            <a href="https://file.io/3jEjWYdvHw7D" class="btn en">Download</a>
+            <a href="https://www.github.com/rayanezerr/blackjack" target="_blank" class="btn github">GitHub</a>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section id="wip">
+      <h2 class="fr hidden">Travaux en cours</h2>
+      <h2 class="en">Works in Progress</h2>
+      <ul class="project-list">
+        <li>
+          <div class="project-info">
+            <h3>PolyTools</h3>
+            <p class="fr hidden">Site web regroupant des outils éducatifs fait en utilisant le MERN Stack.</p>
+            <p class="en">Educational tools website built with the MERN Stack.</p>
+          </div>
+          <div class="project-actions">
+            <a href="" class="btn fr hidden">Lien</a>
+            <a href="" class="btn en">Link</a>
+            <a href="" target="_blank" class="btn github">GitHub</a>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 RRZ</p>
+  </footer>
+
+  <script>
+    function switchLanguage(lang) {
+      document.querySelectorAll('.fr, .en').forEach(section => {
+        section.classList.add('hidden');
+      });
+      document.querySelectorAll(`.${lang}`).forEach(section => {
+        section.classList.remove('hidden');
+      });
+    }
+  </script>
+</body>
+
+</html>
