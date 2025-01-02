@@ -185,3 +185,16 @@ footer {
   color: #fff;
   font-size: 0.9em;
 }
+
+@media (max-width: 670px) {
+  .project-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .project-actions .btn {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+  }
+}
